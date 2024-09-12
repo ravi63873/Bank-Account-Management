@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+    <h1>Bank Account Management</h1>
+
+    <!-- Form for creating a bank account -->
+    <form id="account-form">
+        <label for="accountHolderName">Account Holder Name:</label>
+        <input type="text" id="accountHolderName" required>
+
+        <label for="accountType">Account Type:</label>
+        <input type="text" id="accountType" required>
+
+        <label for="initialBalance">Initial Balance:</label>
+        <input type="number" id="initialBalance" required>
+
+        <button type="submit">Create Account</button>
+    </form>
+
+    <!-- Buttons for account operations -->
+    <div id="account-operations">
+        <button id="checkBalance">Check Balance</button>
+        <button id="deposit">Deposit</button>
+        <button id="withdraw">Withdraw</button>
+    </div>
+
+    <!-- Display area for account information and error messages -->
+    <div id="account-info">
+        <h2>Account Information</h2>
+        <p><strong>Account Holder:</strong> <span id="displayAccountHolder"></span></p>
+        <p><strong>Account Type:</strong> <span id="displayAccountType"></span></p>
+        <p><strong>Balance:</strong> $<span id="displayBalance"></span></p>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

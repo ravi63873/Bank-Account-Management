@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/* Reset some default browser styles */
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f55;
+    padding: 20px;
+}
+
+/* Style the page title */
+h1 {
+    text-align: center;
+    color: #433;
+}
+
+/* Style the form for creating a bank account */
+form {
+    background-color: darkseagreen;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style form labels and input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style form submit button */
+button[type="submit"] {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style account operation buttons */
+#account-operations {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Style the account information display area */
+#account-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}
